@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-	<groupId>com.rapid7.communityid</groupId>
-	<artifactId>community-id-java</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    
+    <groupId>com.rapid7.communityid</groupId>
+    <artifactId>community-id-java</artifactId>
+    <version>1.0.4-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <!-- REMOVE BEFORE OPEN SOURCING-->
     <parent>
@@ -13,8 +13,8 @@
         <version>1.7.11</version>
     </parent>
     
-	<name>community-id-java</name>
-	<description>A Java implementation of the Community ID flow hashing standard (https://github.com/corelight/community-id-spec)</description>
+    <name>community-id-java</name>
+    <description>A Java implementation of the Community ID flow hashing standard (https://github.com/corelight/community-id-spec)</description>
     <url>https://github.com/rapid7/community-id-java</url>
 
     <organization>
@@ -22,12 +22,12 @@
         <url>http://www.rapid7.com</url>
     </organization>
 
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
     <scm>
         <connection>scm:git:git@github.com:rapid7/community-id-java.git</connection>
@@ -36,28 +36,28 @@
         <tag>HEAD</tag>
     </scm>
 
-	<developers>
-		<developer>
-			<name>Hannah Lerman</name>
-			<email>hlerman@rapid7.com</email>
-			<organization>Rapid7</organization>
-			<organizationUrl>http://www.rapid7.com/</organizationUrl>
-		</developer>
-		<developer>
-			<name>Rajan Parthasarathy</name>
-			<email>rajanp@rapid7.com</email>
-			<organization>Rapid7</organization>
-			<organizationUrl>http://www.rapid7.com/</organizationUrl>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <name>Hannah Lerman</name>
+            <email>hlerman@rapid7.com</email>
+            <organization>Rapid7</organization>
+            <organizationUrl>http://www.rapid7.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Rajan Parthasarathy</name>
+            <email>rajanp@rapid7.com</email>
+            <organization>Rapid7</organization>
+            <organizationUrl>http://www.rapid7.com/</organizationUrl>
+        </developer>
+    </developers>
 
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
-	<build>
-		<defaultGoal>install</defaultGoal>
+    <build>
+        <defaultGoal>install</defaultGoal>
         <pluginManagement>
             <!-- Note: The checkstyle plugin should be removed if this library is made public. -->
             <plugins>
@@ -75,16 +75,16 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-	</build>
-	
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+    </build>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <!-- Note: The style-enforcer profile should be removed if this library is made public. -->
