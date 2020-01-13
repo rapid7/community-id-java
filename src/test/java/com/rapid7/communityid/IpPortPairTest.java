@@ -61,7 +61,7 @@ public class IpPortPairTest {
     public void testBigIntegerIPV4() throws UnknownHostException {
         IpPortPair pair = new IpPortPair(InetAddress.getByName("192.168.170.8"),  7);
 
-        BigInteger test = pair.toBigInt(pair.getIpAddress());
+        BigInteger test = IpPortPair.toBigInt(pair.getIpAddress());
 
         assertEquals(BigInteger.valueOf(3232279048L), test);
 
@@ -71,7 +71,7 @@ public class IpPortPairTest {
     public void testBigIntegerIPV6() throws UnknownHostException {
         IpPortPair pair = new IpPortPair(InetAddress.getByName("fe80::200:86ff:fe05:80da"),  7);
 
-        BigInteger test = pair.toBigInt(pair.getIpAddress());
+        BigInteger test = IpPortPair.toBigInt(pair.getIpAddress());
 
         String actual = "338288524927261089654163160463460106458";
 
