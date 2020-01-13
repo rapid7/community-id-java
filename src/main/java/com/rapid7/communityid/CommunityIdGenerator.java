@@ -8,9 +8,7 @@ package com.rapid7.communityid;
 
 import static java.util.Objects.requireNonNull;
 
-
 import java.net.InetAddress;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
@@ -131,11 +129,12 @@ public class CommunityIdGenerator {
      * @return The hex String created from the array of bytes.
      */
     private String bytesToHex(final byte[] bytes) {
-        Formatter formatter = new Formatter();
-        for (byte b : bytes) {
-            formatter.format("%02x", b);
+        try (Formatter formatter = new Formatter()) {
+            for (byte b : bytes) {
+                formatter.format("%02x", b);
+            }
+            return formatter.toString();
         }
-        return formatter.toString();
     }
 
     /**

@@ -5,11 +5,10 @@
  **************************************************************************/
 package com.rapid7.communityid;
 
+import static org.junit.Assert.assertEquals;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-
-import static org.junit.Assert.*;
-
 
 import org.junit.Test;
 
@@ -170,9 +169,8 @@ public class CommunityIdGeneratorTest {
 
         CommunityIdGenerator generator = new CommunityIdGenerator(1, true);
 
-        String result = generator.generateCommunityId(proto, first.getIpAddress(), first.getPort(),
+        generator.generateCommunityId(proto, first.getIpAddress(), first.getPort(),
                 second.getIpAddress(), second.getPort());
-
     }
 
     @Test
