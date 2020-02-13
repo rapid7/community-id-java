@@ -19,9 +19,9 @@ To add community-id-java to your Maven project, use the following:
 
 ```xml
 <dependency>
-	<groupId>com.rapid7.communityid</groupId>
-	<artifactId>community-id-java</artifactId>
-	<version>1.0.2</version>
+    <groupId>com.rapid7.communityid</groupId>
+    <artifactId>community-id-java</artifactId>
+    <version>2.0.0</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ CommunityIdGenerator generator = new CommunityIdGenerator();
 //The default constructor will set seed to 0 and base64 to true
 
 String result = generator.generateCommunityId(Protocol.UDP, 
-	InetAddress.getByName("192.168.1.52"), 54585, InetAddress.getByName("8.8.8.8"), 53);
+    InetAddress.getByName("192.168.1.52"), 54585, InetAddress.getByName("8.8.8.8"), 53);
 ```
 
 result will look like:
