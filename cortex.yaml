@@ -1,0 +1,15 @@
+---
+info:
+  title: Community Id Java
+  description: A Java implementation of the Community ID flow hashing standard
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/community-id-java
+  x-cortex-tag: community-id-java
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: insightidr
+openapi: 3.0.1
+servers:
+- url: "/"
