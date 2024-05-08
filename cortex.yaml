@@ -9,7 +9,7 @@ info:
   x-cortex-tag: community-id-java
   x-cortex-type: service
   x-cortex-domain-parents:
-  - tag: idr-common
+  - tag: idr-community-id
 openapi: 3.0.1
 servers:
 - url: "/"
