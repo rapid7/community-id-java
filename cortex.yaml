@@ -14,10 +14,6 @@ info:
     - target:library
     - strategy:cloud
     - exposure:external-ship
-  x-cortex-owners:
-    - name: rapid7/dnr
-      type: group
-      provider: GITHUB
 openapi: 3.0.1
 servers:
 - url: "/"
