@@ -10,6 +10,10 @@ info:
   x-cortex-type: service
   x-cortex-domain-parents:
   - tag: idr-community-id
+  x-cortex-groups:
+    - target:library
+    - strategy:cloud
+    - exposure:external-ship
 openapi: 3.0.1
 servers:
 - url: "/"
