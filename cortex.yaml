@@ -17,3 +17,5 @@ info:
 openapi: 3.0.1
 servers:
 - url: "/"
+x-cortex-domain-parents:
+  - tag: idr-core-ruraljurors
