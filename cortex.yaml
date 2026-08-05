@@ -9,7 +9,7 @@ info:
   x-cortex-tag: community-id-java
   x-cortex-type: service
   x-cortex-domain-parents:
-  - tag: idr-core-ruraljurors
+  - tag: dnr-core-ruraljurors
   x-cortex-groups:
     - target:library
     - strategy:cloud
