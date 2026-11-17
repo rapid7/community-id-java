@@ -90,10 +90,41 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <!-- Writes target/site/jacoco/jacoco.xml for CI coverage reporting -->
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.14</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
     <profiles>
+        <profile>
+            <!-- On JDK 9+, compile against the Java 8 API as well as to
+                 Java 8 bytecode. JDK 8 itself, as in the GitHub workflows, has no release flag. -->
+            <id>java8-release</id>
+            <activation>
+                <jdk>[9,)</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.release>8</maven.compiler.release>
+            </properties>
+        </profile>
         <profile>
             <id>release</id>
             <activation>
